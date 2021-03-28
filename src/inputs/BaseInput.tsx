@@ -75,7 +75,7 @@ export const BaseInputPropTypes = {
   /** Currently selected value. */
   value: PropTypes.string.isRequired,
   /** Called on selected value change. */
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
   /** If true, popup closes after selecting a value. */
   closable: PropTypes.bool,
   /** An input can be formatted to appear inline in other content. */
@@ -279,6 +279,7 @@ export interface BaseInputState {
 abstract class BaseInput<P extends BaseInputProps,
   S extends BaseInputState> extends React.Component<P, S> {
   public static defaultProps = {
+    value: '',
     inline: false,
     localization: moment.locale(),
   };
