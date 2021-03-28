@@ -167,10 +167,9 @@ export function parseDatesRange(
   const dates = inputString.split(inputSeparator)
     .map((date) => cleanDate(date, dateFormat));
   const result: Range = {};
-  let start;
   let end;
 
-  start = moment(dates[0], dateFormat);
+  const start = moment(dates[0], dateFormat);
   if (dates.length === 2) {
     end = moment(dates[1], dateFormat);
   }
