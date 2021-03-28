@@ -1,24 +1,21 @@
-:tada: Starting with version 0.8.0 it's css free.
-:warning: Uncompatible with *semantic-ui-react* version 0.83.0
-
-# semantic-ui-calendar-react
+# semantic-ui-calendar-react-17
 Datepicker react component based on semantic-ui-react components
 
-My intention was to create something that looks like this https://github.com/mdehoog/Semantic-UI-Calendar.
+Forked from https://github.com/arfedulov/semantic-ui-calendar-react.git and updated dependencies
 
-Here you can find a live example https://arfedulov.github.io/semantic-ui-calendar-react
+Here you can find a live example https://mgrahame.github.io/semantic-ui-calendar-react-17
 
 # installation
 
 ## npm
 ```
-npm i semantic-ui-calendar-react
+npm i semantic-ui-calendar-react-17
 ```
 
 ## CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui-calendar-react@latest/dist/umd/semantic-ui-calendar-react.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui-calendar-react-17@latest/dist/umd/semantic-ui-calendar-react-17.js"></script>
 ```
 
 Then you can access calendar components from your scripts like this:
@@ -38,7 +35,7 @@ import {
   TimeInput,
   DateTimeInput,
   DatesRangeInput
-} from 'semantic-ui-calendar-react';
+} from 'semantic-ui-calendar-react-17';
 ```
 Then build a form:
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.16.0 2021-03-27
+
+- chore: update dependencies
+
+- chore: replace tslint with eslint
+
+- fix: eslint warning
+
+- fix: tests
+
+- fix: build warrnings
+
+- chore: update docs to semantic-ui-calendar-react-17
+
 ## v0.15.0 2019-05-04
 
 - feat: add ``hideMobileKeyboard`` prop [`#143`](https://github.com/arfedulov/semantic-ui-calendar-react/pull/143)
