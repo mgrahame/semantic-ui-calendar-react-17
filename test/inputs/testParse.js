@@ -80,7 +80,7 @@ describe('parseValue', () => {
 
       assert(moment.isMoment(parsed), 'return moment instance');
       assert(parsed.isValid(), 'return valid moment instance');
-      assert(parsed.isSame(moment('2015-02-15', 'YYYY-MM-DD'), 'date'), 'return correct moment');
+      assert(parsed.isSame(moment('2015-02-15T00:00:00.000Z'), 'date'), 'return correct moment');
     });
 
     it('create moment from input Moment', () => {
@@ -124,9 +124,10 @@ describe('dateValueToString()', () => {
     const locale = 'en';
 
     const producedValue = dateValueToString(inputValue, dateFormat, locale);
+    const expectedValue = moment('2015-08-11T00:00:00.000Z').format(dateFormat);
 
     assert(_.isString(producedValue), 'return string value');
-    assert.equal(producedValue, '11-08-2015', 'return correct string');
+    assert.equal(producedValue, expectedValue, 'return correct string');
   });
 
   it('handles Moment input value', () => {
