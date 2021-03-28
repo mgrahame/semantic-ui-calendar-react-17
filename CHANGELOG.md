@@ -14,6 +14,8 @@
 
 - chore: update docs to semantic-ui-calendar-react-17
 
+- chore: update prod build
+
 ## v0.15.0 2019-05-04
 
 - feat: add ``hideMobileKeyboard`` prop [`#143`](https://github.com/arfedulov/semantic-ui-calendar-react/pull/143)

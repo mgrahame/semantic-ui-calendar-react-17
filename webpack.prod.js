@@ -1,14 +1,13 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const config = {
   entry: {
-    index: './src/index.ts',
+    calendar: './example/calendar.tsx',
   },
   output: {
-    path: path.resolve(__dirname, 'dist', 'umd'),
-    library: 'SemanticUiCalendarReact',
-    libraryTarget: 'umd',
-    filename: 'semantic-ui-calendar-react-17.js',
+    path: path.resolve(__dirname, 'example'),
+    filename: '[name].bundle.js',
   },
   mode: 'production',
   module: {
@@ -28,7 +27,9 @@ const config = {
   resolve: {
     extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', 'jsx'],
   },
-  devtool: 'source-map',
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };
 
 module.exports = config;
